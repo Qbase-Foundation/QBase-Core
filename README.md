@@ -2,17 +2,10 @@
 Qbase Core 1.0.1.2
 ===============================
 
-https://qbasecore.com
-
-
 What is Qbase?
 ----------------
 
 Qbase-Coin is a fully decentralised cryptocurrency built on the premise of providing anonymity, speed, fair mining by being ASIC-resistant and reliability by the usage of Masternodes.
-
-
-For more information, as well as an immediately usable, binary version of
-the Qbase Core software, see https://qbasecore.com
 
 
 License
@@ -21,14 +14,6 @@ License
 Qbase Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
-Development Process
--------------------
-
-The `master` branch is meant to be stable. Development is normally done in separate bran
-[Tags](https://github.com/Qbase/Qbase/tags) are created to indicate new official,l.0.0
-stable release versions of Qbase Core.
-
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Testing
 -------
