@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Qbase
+Comment=Qbase P2P Cryptocurrency
+Exec=qbase-qt %u
+Terminal=false
+Type=Application
+Icon=qbase128
+MimeType=x-scheme-handler/qbase;
+Categories=Office;Finance;
+Name[en_US]=qbase-qt.desktop

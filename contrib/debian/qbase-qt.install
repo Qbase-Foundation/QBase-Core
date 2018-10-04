@@ -1,0 +1,6 @@
+usr/local/bin/qbase-qt usr/bin
+share/pixmaps/qbase32.xpm usr/share/pixmaps
+share/pixmaps/qbase16.xpm usr/share/pixmaps
+share/pixmaps/qbase128.png usr/share/pixmaps
+debian/qbase-qt.desktop usr/share/applications
+debian/qbase-qt.protocol usr/share/kde4/services/

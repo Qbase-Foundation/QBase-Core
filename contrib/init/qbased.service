@@ -1,0 +1,22 @@
+[Unit]
+Description=Qbase's distributed currency daemon
+After=network.target
+
+[Service]
+User=qbasecore
+Group=qbasecore
+
+Type=forking
+PIDFile=/var/lib/qbased/qbased.pid
+ExecStart=/usr/bin/qbased -daemon -pid=/var/lib/qbased/qbased.pid \
+-conf=/etc/qbasecore/qbase.conf -datadir=/var/lib/qbased -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

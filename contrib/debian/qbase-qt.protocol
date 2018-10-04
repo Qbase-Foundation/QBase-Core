@@ -1,0 +1,11 @@
+[Protocol]
+exec=qbase-qt '%u'
+protocol=qbase
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
