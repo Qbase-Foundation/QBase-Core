@@ -1,5 +1,5 @@
 
-Qbase Core 1.0.1.2
+Qbase Core 2.0.0.0
 ===============================
 
 What is Qbase?
