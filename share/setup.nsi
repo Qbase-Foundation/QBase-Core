@@ -5,16 +5,16 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 1.0.2
+!define VERSION 2.0.0
 !define COMPANY "Qbase Core project"
 !define URL https://qbase.io/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/qbase/Qbase/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/qbase/Qbase/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/mr/qbase/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/mr/qbase/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/home/qbase/Qbase/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/mr/qbase/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -22,7 +22,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Qbase Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\qbase-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/qbase/Qbase/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/mr/qbase/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/qbase/Qbase/qbasecore-${VERSION}-win-setup.exe
+OutFile /home/mr/qbase/qbasecore-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\QbaseCore
 !else
@@ -58,7 +58,7 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion ${VERSION}.1
+VIProductVersion ${VERSION}.0
 VIAddVersionKey ProductName "Qbase Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/qbase/Qbase/release/qbase-qt.exe
-    File /oname=COPYING.txt /home/qbase/Qbase/COPYING
-    File /oname=readme.txt /home/qbase/Qbase/doc/README_windows.txt
+    File /home/mr/qbase/release/qbase-qt.exe
+    File /oname=COPYING.txt /home/mr/qbase/COPYING
+    File /oname=readme.txt /home/mr/qbase/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/qbase/Qbase/release/qbased.exe
-    File /home/qbase/Qbase/release/qbase-cli.exe
+    File /home/mr/qbase/release/qbased.exe
+    File /home/mr/qbase/release/qbase-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /home/qbase/Qbase/doc\*.*
+    File /r /home/mr/qbase/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 

@@ -1,6 +1,6 @@
 #! /bin/bash
-# Generated automatically by config.status (qbasecore) 1.0.2
-# Libtool was configured on host qbase-VirtualBox:
+# Generated automatically by config.status (qbasecore) 2.0.0
+# Libtool was configured on host mr-VirtualBox:
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 
 # Provide generalized library-building support services.

@@ -164,9 +164,12 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x41c18eeb46067c819d6199db3dbb87680ab4295a9e2d55f58dfda83e0d56b820"));
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("Seed1", "seed1.seednode.site"));
-        vSeeds.push_back(CDNSSeedData("Seed2", "seed2.seednode.site"));
-        vSeeds.push_back(CDNSSeedData("explorer", "explorer.explorerbase.info"));
+        vSeeds.push_back(CDNSSeedData("Seed1", "seed1.qbs.signal2noi.se"));
+        vSeeds.push_back(CDNSSeedData("Seed2", "seed2.qbs.signal2noi.se"));
+        vSeeds.push_back(CDNSSeedData("Seed3", "seed3.qbs.signal2noi.se"));
+        vSeeds.push_back(CDNSSeedData("Seed4", "seed4.qbs.signal2noi.se"));
+        vSeeds.push_back(CDNSSeedData("Seed5", "seed5.qbs.signal2noi.se"));
+
     
         // Qbase addresses start with 'B'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,25);
